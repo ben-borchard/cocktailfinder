@@ -1,0 +1,15 @@
+.drinks-input {
+  margin-bottom:10px;
+}
+
+.drinks-ingredient {
+  border: 1px solid blue;
+  border-radius: 2px;
+  background-color: cornflowerblue;
+  padding: 3px;
+}
+
+.drinks-ingredient-close {
+  color: #AAA;
+  margin-left: 5px;
+}

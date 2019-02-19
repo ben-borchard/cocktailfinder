@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- autocomplete -->
+    <!-- JS file -->
+    <script src="autocomplete/jquery.easy-autocomplete.min.js"></script> 
+    <!-- CSS file -->
+    <link rel="stylesheet" href="autocomplete/easy-autocomplete.min.css"> 
+    <!-- Additional CSS Themes file - not required-->
+    <link rel="stylesheet" href="autocomplete/easy-autocomplete.themes.min.css"> 
+
+    <!-- custom -->
+    <script type="text/javascript" src="cocktails.js"></script>  
+    <link rel="stylesheet" href="cocktails.css"> 
+
+    <title>Cocktail Finder</title>
+  </head>
+  <body>
+    <p>This is the cocktail finder app.</p>
+    <div class="drinks-input">
+      Start typing the ingredients you have:
+      <input onkeypress="handleIngredientKeypress(event)" id="ingredientInput" />
+      <button onClick="addIngredient()">Add Ingredient</button>
+      <button onClick="clearIngredients()">Clear Ingredients</button>
+    </div>
+    <div id="ingredients"></div>
+    <div id="results"></div>
+  </body>
+</html>
